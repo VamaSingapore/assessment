@@ -15,7 +15,7 @@ class TableViewCell: UITableViewCell {
     
     // MARK: - Views
 
-    private let randomImageView: UIImageView = {
+    private let numberImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = .gray
