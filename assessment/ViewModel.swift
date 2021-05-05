@@ -22,7 +22,11 @@ class ViewModel {
         self.images = []
         
         for i in 0..<100 {
-            self.imageUrlStrings.append("https://picsum.photos/id/\(i)"  + "/200/300")
+            if i == 97 {
+                self.imageUrlStrings.append("")
+            } else {
+                self.imageUrlStrings.append("https://dummyimage.com/600x400/000/fff&text=\(i+1)")
+            }
         }
     }
     
