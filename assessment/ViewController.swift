@@ -8,11 +8,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
-    
-    // MARK: - ViewModel
-    
-    var viewModel: ViewModel = ViewModel()
-    
+            
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
@@ -37,13 +33,7 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.cellId, for: indexPath) as! TableViewCell
-        
-        cell.setup(index: indexPath.row)
-        
-        viewModel.fetchImage(forIndex: indexPath.row) { (image, index) in
-            cell.configure(image: image, index: index)
-        }
-        
+                
         return cell
     }
     
