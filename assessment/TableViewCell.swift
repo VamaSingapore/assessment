@@ -12,16 +12,7 @@ class TableViewCell: UITableViewCell {
     // MARK: - Properties
     
     static let cellId = "TableViewCell"
-    
-    // MARK: - Views
-
-    private let numberImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .gray
-        return imageView
-    }()
-    
+        
     // MARK: - Lifecycle
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

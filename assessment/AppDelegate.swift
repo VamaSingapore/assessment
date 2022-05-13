@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,10 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()
         
-        KingfisherManager.shared.cache.clearMemoryCache()
-        KingfisherManager.shared.cache.clearDiskCache()
-        KingfisherManager.shared.cache.cleanExpiredDiskCache()
-
         return true
     }
 
